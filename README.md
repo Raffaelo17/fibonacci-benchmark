@@ -117,7 +117,7 @@ gcc -o main_b_space_iterative.exe main_b_space_iterative.c mylib.o
 
 These are tested using the same N which is 1000, So, iterative takes lesser space with only 0.4 MB of memory needed to run while recursive method needed 0.7 MB to run
 
-(seen based on the memory)
+
 
 
 
