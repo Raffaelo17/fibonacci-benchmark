@@ -3,14 +3,10 @@
 ## About
 
 
-### Fibonnaci is the sequence follows the rule that each number is equal to the sum of the preceding two numbers.
-
-![Alt text](./Images/image2.png)
-
 ## Iterative and Recursive
 #
 ### Iterative
-to do something again and again and again to improve it results
+Since we utilize only three variables to hold the previous two Fibonacci numbers in order to get the following and subsequent Fibonacci numbers, our time complexity in this case is O(N) and our space complexity is constant.
 
 ```c
 int fibonacciIterative(int N){
@@ -34,7 +30,8 @@ int F0 = 0;
     }}
 ```
 ### Recursive
-we first check if the number n is zero or one. If yes, we return the value of n. If not, we recursively call fibonacci with the values n-1 and n-2.
+Because each recursion would call two more, making the Time Complexity Exponential, if n > 1, then T(n) = T(n-1) + T(n-2)
+Although space appears to be constant, there is always a lot going on in the background since stack memory is consumed with each call.
 ```c
 int fibonacciRecursive(int N){
     if (N == 0){
@@ -65,7 +62,7 @@ F(3) Recursive = 2
 ```
 
 ## Benchmarking
-Benchmarking is a way to analyze statistical learning algorithms on one or more data sets in which they are able to compare a set of algorithms to find the best approach for an algorithm, the fastest and the most efficient one.
+Benchmarking is provides crucial information to assist you understand how your firm compares with similar organizations, even if they are in a different business or have a different group of clients.
 
 ## Time Complexity
  the amount of time taken by an algorithm to run
@@ -121,4 +118,4 @@ These are tested using the same N which is 1000, So, iterative takes lesser spac
 
 
 ## Conclusion
-in conclusion, Iterative method requires lesser space and time to solve rather than the recursive method.
+in conclusion, Iterative method requires lesser space and time to solve rather than the recursive method. Iterative method is the fastest as well as memory efficient as we store only the last two values.
